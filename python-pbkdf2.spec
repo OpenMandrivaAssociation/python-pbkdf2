@@ -1,6 +1,6 @@
 Name:		python-pbkdf2
 Version:	1.3
-Release:	2
+Release:	3
 Source0:	https://files.pythonhosted.org/packages/source/p/pbkdf2/pbkdf2-%{version}.tar.gz
 Summary:	PKCS#5 v2.0 PBKDF2 Module
 URL:		https://pypi.org/project/pbkdf2/
@@ -12,6 +12,10 @@ BuildArch:	noarch
 
 %description
 PKCS#5 v2.0 PBKDF2 Module
+
+%prep -a
+# A library module must not carry a shebang. rpmlint rejects it.
+sed -i '1{/^#!/d}' pbkdf2.py
 
 %files
 %{py_sitedir}/pbkdf2.py
