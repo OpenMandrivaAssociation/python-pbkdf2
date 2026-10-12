@@ -1,6 +1,6 @@
 Name:		python-pbkdf2
 Version:	1.3
-Release:	1
+Release:	2
 Source0:	https://files.pythonhosted.org/packages/source/p/pbkdf2/pbkdf2-%{version}.tar.gz
 Summary:	PKCS#5 v2.0 PBKDF2 Module
 URL:		https://pypi.org/project/pbkdf2/
